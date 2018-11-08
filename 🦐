@@ -1,6 +1,10 @@
+
 <html>
 <head>
 <style type="text/css">
+#transition {
+width:100;
+}
 a:hover {
 color:deeppink;
 }
