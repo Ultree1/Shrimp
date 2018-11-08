@@ -2,8 +2,14 @@
 <html>
 <head>
 <style type="text/css">
-#transition {
-width:100;
+img {
+transition: all 0.3s ease-in-out 0s;
+}
+img:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
 }
 a:hover {
 color:deeppink;
