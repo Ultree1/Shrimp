@@ -3,9 +3,12 @@
 <head>
 <style type="text/css">
     .marquee {
-    -webkit-marquee: auto medium infinite scroll normal; 
-overflow-x: -webkit-marquee;
-
+      display: block;
+  width: 200%;
+  height: 30px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 5s linear infinite;
     }
 .yeET {
 transition: all 0.3s ease-in-out 0s;
