@@ -2,17 +2,24 @@
 <html>
 <head>
 <style type="text/css">
-    @keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
+ .marquee {
+    width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 50s linear infinite;
 }
-    .marquee {
-      display: block;
-  width: 200%;
-  height: 30px;
-  position: absolute;
-  overflow: hidden;
-  animation: marquee 5s linear infinite;
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
     }
 .yeET {
 transition: all 0.3s ease-in-out 0s;
